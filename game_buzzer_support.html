@@ -1,0 +1,48 @@
+<!-- TWO STEPS TO INSTALL FAQS PAGE:
+
+   1.  Paste the code into the HEAD of your HTML document
+   2.  Put the final code into the BODY of your HTML document  -->
+
+<!-- STEP ONE: Copy this code into the BODY of your HTML document  -->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+<!--Free FAQ Page Generator: http://www.madsubmitter.com-->
+function showFAQ(form) {
+form.answer.value = form.question.options[form.question.selectedIndex].value;
+}
+// End -->
+</SCRIPT>
+
+<!-- STEP TWO: Add this code into the BODY of your HTML document  -->
+
+<center>
+<form name=faqform>
+<table border=1 cellspacing=0 cellpadding=5>
+<tr bgcolor="#1B62A9">	
+<td align=left><font face="verdana,arial" size="-1" color="#ffffff">
+<b>Support for Game Buzzer App</b></font></td>
+</tr>
+<tr bgcolor="#ffffcc"><td><font face="verdana,arial" size="-1"><br>
+Browse the Frequently Asked Questions below and click for the answer.
+<p>
+<ul><select size=10 name=question onChange="javascript:showFAQ(this.form);">
+<option value="Simply click on the time value when the timer has been reset.  This will bring up a field to set the number of seconds the timer will use.">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;How do I set the timer?
+<option value="Any value between 0 and 3600 seconds.">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;How long can I set the timer for?
+<option value="The buzzer can be run for up to 1 minute, at which time you will be advised to stop annoying your mom.">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;How long can I click on the Buzzer?
+<option value="The alarm will go for up to 5 seconds.  Hitting Reset will stop the alarm.">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;How long is the timer completion alarm?
+<option value="Email us at wbates (at) wbates.com">&nbsp;&nbsp;&nbsp;-->&nbsp;&nbsp;How can I get more support?
+</select>
+</ul>
+<p>
+Answer:
+<p>
+<ul>
+<textarea name="answer" rows=15 cols=50 wrap=virtual></textarea>
+</ul>
+</font>
+</td>
+</tr>
+</table>
+</form>
+</center>
